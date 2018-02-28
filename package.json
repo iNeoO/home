@@ -1,0 +1,11 @@
+{
+  "name": "Simple-home",
+  "description": "Just a home page",
+  "version": "1.0.0",
+  "author": "Valère Pique <valere@1000mercis.com>",
+  "private": true,
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "particles.js": "*"
+  }
+}
