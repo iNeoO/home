@@ -28,6 +28,12 @@
     "eslint-plugin-vue": "^4.0.0",
     "webpack-node-externals": "^1.7.2"
   },
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "3002"
+    }
+  },
   "homepage": "https://tuturu.io",
   "repository": {
     "type": "git",
