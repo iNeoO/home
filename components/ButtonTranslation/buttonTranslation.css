@@ -1,0 +1,25 @@
+.btn {
+  vertical-align: middle;
+  border-radius: 0.3em;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-align: center;
+  padding: 9px 11px;
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  background-position: 100%;
+  background-size: 500%;
+  transition: background 500ms ease-in-out;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-decoration: none;
+  user-select: none;
+}
+
+.btn:hover, .btn:focus {
+  outline: 0;
+  background-position: 0;
+}

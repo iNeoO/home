@@ -1,11 +1,36 @@
 {
-  "name": "Simple-home",
-  "description": "Just a home page",
+  "name": "home",
   "version": "1.0.0",
-  "author": "Valère Pique <valere@1000mercis.com>",
+  "description": "Nuxt.js project",
+  "author": "Valère Pique <pique.valere@gmx.fr>",
   "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
   "dependencies": {
-    "font-awesome": "^4.7.0",
-    "particles.js": "*"
+    "axios": "^0.18.0",
+    "nuxt": "^1.0.0",
+    "vue": "^2.5.16",
+    "vue-awesome": "^3.0.0",
+    "vue-markdown": "^2.2.4",
+    "vue-motion": "^0.2.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "homepage": "https://tuturu.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IneoO/home.git"
   }
 }
