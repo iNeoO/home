@@ -30,7 +30,6 @@ export default {
         return -1
       }
       if (repoA.stargazers_count < repoB.stargazers_count) {
-        console.log('tot');
         return 1
       }
       return 0
@@ -41,6 +40,7 @@ export default {
       this.topRepos = this.repos
       this.topRepos.sort(this.sortRepos)
       this.topRepos = this.topRepos.slice(0, 5)
+      this.$store.commit('GithubStore/UNSET_REPOS_LOADING')
     })
   },
 }

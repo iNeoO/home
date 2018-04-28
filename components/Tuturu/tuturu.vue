@@ -14,7 +14,8 @@
           @touchstart.native="animate"/>
       </template>
     </Motion>
-    <audio src="music/tuturu.mp3" autoplay="autoplay"></audio>
+    <div class="audio">
+    </div>
   </div>
 </template>
 

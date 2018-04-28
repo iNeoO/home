@@ -9,7 +9,11 @@ export default {
     }
   },
   mounted () {
+    const audioElement = document.createElement('audio');
+    audioElement.volume=0.2;
+    audioElement.setAttribute('src', 'music/tuturu.mp3');
     setTimeout(() => {
+      audioElement.play();
       this.x = 0
     }, 1000)
   },

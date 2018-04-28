@@ -5,7 +5,7 @@ const apiPath = 'https://api.github.com'
 
 const state = {
   repos: [],
-  reposLoading: false
+  reposLoading: true
 }
 
 const actions = {
@@ -16,7 +16,6 @@ const actions = {
       data
     }) => {
       commit('SET_REPOS', data)
-      commit('UNSET_REPOS_LOADING')
     }).catch((error) => {
       console.log(error)
     })

@@ -1,5 +1,5 @@
 <template>
-  <div class="table">
+  <div class="table" v-if="!reposLoading">
     <table>
       <thead>
         <tr>
