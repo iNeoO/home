@@ -6,7 +6,6 @@ export default {
     return {
       cv: `
 **Mr. Valère PIQUE**
-43 rue de l'egalité 93260 les lilas
 [Pique.valere@gmx.fr](mailto:Pique.valere@gmx.fr)
 [https://tuturu.io](https://tuturu.io)
 [https://github.com/IneoO](https://github.com/IneoO)
