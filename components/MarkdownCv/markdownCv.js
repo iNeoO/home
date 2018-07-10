@@ -6,7 +6,6 @@ export default {
     return {
       cv: `
 **Mr. Valère PIQUE**
-43 rue de l'egalité 93260 les lilas
 [Pique.valere@gmx.fr](mailto:Pique.valere@gmx.fr)
 [https://tuturu.io](https://tuturu.io)
 [https://github.com/IneoO](https://github.com/IneoO)
@@ -25,7 +24,7 @@ Born 29th august 1992
       -   Development of microfronts In SSR. **webpack**, **flask**, **vue2**.
 
 -   2015 Veolia Eau with Sopra Steria
-    - Mission : Développements d’applications pour la gestion d’intervention des techniciens
+    - Mission : Development of applications for the intervention management of technicians
       -   Maintenance of an application for intervention planning at the Veolia water connection. **xslt**
       -   Creation of a web application to administer the previous application. **angularJS**, **karma**, **jasmine**, **grunt**
       -   Adding features in a management application for technicians or their cell phone. **PHP**, **dynamoDB**, **googleApi**
@@ -38,7 +37,7 @@ __Logiciels utilisés :__ Atom, i3, git, npm, pip.
 __English :__ Read, spoken, written (Toeic Blue level).
 
 ### Formation
-2012-2015 : École d’ingénieurs 3il, Limoges.
+2012-2015 : Engineering school 3il, Limoges.
 2012 : DUT in Computer Science at the IUT of Paris Descartes.
 
 ### Other activities
