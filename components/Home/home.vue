@@ -13,7 +13,7 @@
     <div class="relative">
       <tuturu />
       <menus />
-      <tableRepos :user="user"/>
+      <!-- <tableRepos :user="user"/> -->
     </div>
     <div class="fixed">
       <buttonDrawBorder v-if="selectors.buttonThemeSelected === 0"
