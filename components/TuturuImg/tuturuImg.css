@@ -11,9 +11,5 @@
   .tuturu {
     border: 10px solid #3d3d3d;
     margin-top: 20px;
-    min-width: 150px;
-    max-width: 300px;
-    min-height: 150px;
-    max-height: 150px;
   }
 }
