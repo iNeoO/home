@@ -1,5 +1,5 @@
 <template>
-  <div class="tuturu">
+  <div>
     <Motion
       tag="div"
       :values="values"
