@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-primary: #2adad0;
+  --font-sans: 'Public Sans', sans-serif;
+  --font-serif: 'Instrument Serif', serif;
+}
+
+:root {
+  --max-site-width: 52ch;
+}
+
+html {
+  scrollbar-gutter: stable;
+  margin-left: calc(100vw - 100%);
+}
+
+body {
+}
