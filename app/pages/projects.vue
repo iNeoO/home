@@ -6,7 +6,7 @@ definePageMeta({
 </script>
 
 <template>
-  <NuxtLayout>
+  <div class="page-wrapper">
     <Projects :is-short="false" />
-  </NuxtLayout>
+  </div>
 </template>

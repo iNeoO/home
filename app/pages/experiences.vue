@@ -8,8 +8,8 @@ definePageMeta({
 </script>
 
 <template>
-  <NuxtLayout>
+  <div class="page-wrapper">
     <Experiences />
     <Education />
-  </NuxtLayout>
+  </div>
 </template>

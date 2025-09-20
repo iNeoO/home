@@ -80,7 +80,7 @@ onUnmounted(() => {
       <span class="inline-flex items-center gap-2 mx-1">
         <Icon name="logos:vue" class="h-6 w-6" />
         <Icon name="logos:react" class="h-6 w-6" />
-        <Icon name="logos:hono`" class="h-6 w-6" />
+        <Icon name="logos:hono" class="h-6 w-6" />
       </span>
       technologies, and naturally <span class="font-semibold">curious</span>. I focus on the web
       platform, especially <Icon name="logos:javascript" class="h-6 w-6 mx-1" /> and

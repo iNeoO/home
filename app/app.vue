@@ -1,3 +1,5 @@
 <template>
-  <NuxtPage class="h-dvh" />
+  <NuxtLayout>
+    <NuxtPage class="h-dvh" />
+  </NuxtLayout>
 </template>
