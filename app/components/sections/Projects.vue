@@ -7,7 +7,7 @@ const props = withDefaults(
   }>(),
   {
     isShort: false,
-  }
+  },
 );
 </script>
 

@@ -10,10 +10,10 @@ definePageMeta({
 </script>
 
 <template>
-  <NuxtLayout>
+  <div class="page-wrapper">
     <About />
     <Tools />
     <Experiences />
-    <Projects />
-  </NuxtLayout>
+    <Projects is-short />
+  </div>
 </template>

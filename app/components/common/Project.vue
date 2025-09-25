@@ -10,7 +10,7 @@ const props = withDefaults(
   >(),
   {
     isShort: false,
-  }
+  },
 );
 const size = props.isShort ? 'xs' : 'sm';
 </script>
@@ -61,7 +61,7 @@ const size = props.isShort ? 'xs' : 'sm';
       {{ props.description }}
     </p>
 
-    <ul class="space-y-2 mb-4">
+    <ul v-if="!props.isShort" class="space-y-2 mb-4">
       <li v-for="(feature, i) in props.features" :key="i" class="flex gap-3">
         <span class="mt-2 h-2 w-2 rounded-full bg-primary/70 shrink-0" />
         <p class="text-sm leading-snug text-neutral-700">{{ feature }}</p>

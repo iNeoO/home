@@ -12,7 +12,8 @@
 
 html,
 body,
-#__nuxt {
+#__nuxt,
+.page-wrapper {
   margin: 0;
   height: auto;
   min-height: 100%;

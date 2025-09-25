@@ -4,5 +4,7 @@
   },
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "biome.enabled": false
+  "biome.enabled": false,
+  "oxc.enable": false,
+  "prettier.enable": true
 }

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { type Ref, ref, onMounted, nextTick } from 'vue';
+import { type Ref, ref, onMounted } from 'vue';
 import Loutre from '~/assets/img/loutre.svg';
 
 const props = defineProps<{
@@ -43,6 +43,12 @@ function alignSelectedTab() {
   if (activeTab && container.value) {
     const li = container.value.querySelector(`a[href="${activeTab.link}"]`) as HTMLElement;
     alignUnderLine(li, actif);
+    alignUnderLine(li, hover);
+  } else {
+    actif.value.left = 0;
+    actif.value.width = 0;
+    hover.value.left = 0;
+    hover.value.width = 0;
   }
 }
 
@@ -58,14 +64,15 @@ onMounted(() => {
 
 const handleClick = (link: string) => {
   emits('update:modelValue', link);
-  nextTick(() => {
-    alignSelectedTab();
-  });
 };
 
 const emits = defineEmits<{
   (e: 'update:modelValue', value: string): void;
 }>();
+
+defineExpose({
+  alignSelectedTab,
+});
 </script>
 
 <template>
@@ -73,9 +80,9 @@ const emits = defineEmits<{
     <div class="nav-container px-4 w-full mx-auto border-1 border-neutral-300 bg-white">
       <div class="flex items-center justify-between py-4">
         <div>
-          <a class="flex gap-2" href="/">
+          <router-link class="flex gap-2" to="/">
             <Loutre class="h-[35px] w-[35px]" />
-          </a>
+          </router-link>
         </div>
         <div ref="container" class="my-auto relative">
           <ul class="flex gap-8 select-none" @mouseleave="handleMouseLeave">
@@ -85,11 +92,12 @@ const emits = defineEmits<{
               class="relative"
               @mouseenter="handleMouseEnter"
             >
-              <a :href="tab.link" @click="handleClick(tab.link)">{{ tab.label }}</a>
+              <router-link :to="tab.link" @click="handleClick(tab.link)">{{
+                tab.label
+              }}</router-link>
             </li>
           </ul>
 
-          <!-- underline -->
           <div
             class="absolute bottom-0 h-[2px] bg-primary transition-all"
             :class="{ 'duration-400': isLoaded }"

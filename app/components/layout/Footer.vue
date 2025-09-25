@@ -3,16 +3,15 @@ import Loutre from '~/assets/img/loutre.svg';
 
 const links = [
   { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
   { label: 'Blog', href: '/blog' },
   { label: 'Projects', href: '/projects' },
+  { label: 'Experiences', href: '/experiences' },
 ];
 </script>
 
 <template>
   <footer class="mx-auto h-full bg-white border-1 border-neutral-300">
     <div class="flex justify-between p-4">
-      <!-- Identity + socials -->
       <div class="space-y-4">
         <a href="/" class="flex items-center gap-2">
           <Loutre class="h-[28px] w-[28px]" />
@@ -61,12 +60,12 @@ const links = [
         <ul class="space-y-2">
           <li v-for="l in links" :key="l.href" class="flex items-center gap-2">
             <span class="h-1.5 w-1.5 rounded-full bg-primary" />
-            <a
-              :href="l.href"
+            <router-link
+              :to="l.href"
               class="text-sm text-neutral-700 underline underline-offset-4 decoration-dotted hover:decoration-solid hover:text-primary"
             >
               {{ l.label }}
-            </a>
+            </router-link>
           </li>
         </ul>
       </nav>
