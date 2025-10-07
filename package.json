@@ -1,42 +1,52 @@
 {
-  "name": "home",
-  "version": "1.0.0",
-  "description": "Nuxt.js project",
-  "author": "Valère Pique <pique.valere@gmx.fr>",
+  "name": "nuxt-app",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "nuxt typecheck"
   },
   "dependencies": {
-    "axios": "^0.18.0",
-    "nuxt": "^1.0.0",
-    "vue": "^2.5.16",
-    "vue-awesome": "^3.0.0",
-    "vue-markdown": "^2.2.4",
-    "vue-motion": "^0.2.2"
+    "@iconify-json/lucide": "^1.2.64",
+    "@iconify-json/simple-icons": "^1.2.49",
+    "@nuxt/content": "^3.7.1",
+    "@nuxt/icon": "2.0.0",
+    "@nuxt/image": "^1.11.0",
+    "@tailwindcss/vite": "^4.1.12",
+    "better-sqlite3": "^12.2.0",
+    "motion-v": "^1.7.0",
+    "nuxt": "^4.1.2",
+    "nuxt-og-image": "^5.1.9",
+    "tailwindcss": "^4.1.12",
+    "vue": "^3.5.20"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.1",
-    "eslint": "^4.15.0",
-    "eslint-friendly-formatter": "^3.0.0",
-    "eslint-loader": "^1.7.1",
-    "eslint-plugin-vue": "^4.5.0",
-    "webpack-node-externals": "^1.7.2"
+    "@nuxt/eslint": "^1.9.0",
+    "@tailwindcss/typography": "^0.5.19",
+    "eslint": "^9.34.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2",
+    "vite-svg-loader": "^5.1.0",
+    "vue-tsc": "^3.0.6"
   },
-  "config": {
-    "nuxt": {
-      "host": "0.0.0.0",
-      "port": "3002"
-    }
+  "resolutions": {
+    "unimport": "4.1.1"
   },
-  "homepage": "https://tuturu.io",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/IneoO/home.git"
-  }
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3",
+      "sharp"
+    ],
+    "ignoredBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild"
+    ]
+  },
+  "packageManager": "pnpm@10.15.0"
 }
