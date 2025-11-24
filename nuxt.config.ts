@@ -16,8 +16,7 @@ export default defineNuxtConfig({
   content: {
     experimental: { nativeSqlite: true },
   },
-  compatibilityDate: '2025-07-15',
-
+  compatibilityDate: '2025-11-24',
   vite: {
     plugins: [tailwindcss() as any, svgLoader()],
   },
