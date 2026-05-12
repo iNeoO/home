@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { getLogo } from '@/constants/logo';
+import { getLogo, type Logos } from '@/constants/logo';
 import Badge from '@/components/common/Badge.vue';
 import type { Sizes } from '@/constants/size';
 
 const props = defineProps<{
-  technologies: string[];
+  technologies: Logos[];
   size?: Sizes;
 }>();
 </script>

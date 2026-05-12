@@ -10,7 +10,7 @@ export const mappingLogo = {
   // UI / Front
   React: 'logos:react',
   Svelte: 'logos:svelte-icon',
-  Vue: 'logos:vue',
+  'Vue.js': 'logos:vue',
   AngularJS: 'devicon:angularjs',
   Nuxt: 'logos:nuxt-icon',
   TanStack: 'noto:palm-tree',
@@ -22,6 +22,7 @@ export const mappingLogo = {
   'D3.js': 'logos:d3',
   I18n: 'material-icon-theme:i18n',
   linkurious: 'ph-graph',
+  'Tesseract.js': 'carbon:cube',
   ChartJS: 'logos:chartjs',
 
   // Tests / DX
@@ -46,12 +47,15 @@ export const mappingLogo = {
   GraphQL: 'logos:graphql',
   Zod: 'simple-icons:zod',
   BullMQ: 'simple-icons:redbull',
+  RabbitMQ: 'devicon:rabbitmq',
   Flask: 'logos:flask',
   PHP: 'logos:php',
+  tRPC: 'devicon:trpc',
 
   // DB / ORM / Infra
   Prisma: 'skill-icons:prisma',
-  Postgres: 'logos:postgresql',
+  Drizzle: 'material-icon-theme:drizzle',
+  PostgreSQL: 'logos:postgresql',
   MongoDB: 'logos:mongodb',
   Redis: 'logos:redis',
   Docker: 'logos:docker-icon',
@@ -60,15 +64,20 @@ export const mappingLogo = {
   Yarn: 'logos:yarn',
   Arch: 'logos:archlinux',
   AWS: 'logos:aws',
-  'Github Actions': 'logos:github-actions',
+  'GitHub Actions': 'logos:github-actions',
+  'GitLab CI': 'devicon:gitlab',
   GoogleAdmin: 'arcticons:google-admin',
   DynamoDB: 'devicon:dynamodb',
+  MinIO: 'simple-icons:minio',
   Jenkins: 'logos:jenkins',
+  Ollama: 'devicon:ollama',
 };
 
-export const getLogo = (logo: string) => {
+export type Logos = keyof typeof mappingLogo
+
+export const getLogo = (logo: Logos) => {
   if (logo in mappingLogo) {
-    return mappingLogo[logo as keyof typeof mappingLogo];
+    return mappingLogo[logo];
   }
   return '';
 };

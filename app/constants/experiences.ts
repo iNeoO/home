@@ -1,3 +1,5 @@
+import type { Logos } from "@/constants/logo"
+
 export type Experience = {
   name: string;
   exName?: string;
@@ -6,37 +8,53 @@ export type Experience = {
   period: string;
   description: string;
   tasks: string[];
-  technologies: string[];
+  technologies: Logos[];
 };
 
 export const experiences: Experience[] = [
   {
-    name: 'Ministry of Solidarity',
-    url: 'https://solidarites.gouv.fr',
-    role: 'Lead Developer',
-    period: '2024 - Present',
-    description: 'Developed a new application and maintained an existing one.',
+    name: 'Cryptonext-security',
+    url: 'https://www.cryptonext-security.com/',
+    role: 'Senior Full-Stack Engineer',
+    period: '2026 - present',
+    description:
+      'Modernizing a cybersecurity analytics platform focused on post-quantum cryptography migration and high-volume asset monitoring.',
     tasks: [
-      'Led the development of an application for reporting cases of abuse in the healthcare system.',
-      'Maintained and improved an existing application for declaring stays for people with disabilities.',
-      'Contributing to french design system in vue and react',
+      'Leading the modernization and redesign of a cybersecurity analytics platform focused on post-quantum cryptography migration.',
+      'Contributing to the architecture of high-volume asset monitoring and visualization workflows.',
     ],
     technologies: [
-      'Node.js',
       'TypeScript',
-      'Nuxt',
-      'React',
       'Hono',
-      'Express',
-      'NestJS',
-      'GraphQL',
-      'Prisma',
-      'Postgres',
-      'AWS',
-      'Vitest',
-      'Playwright',
+      'React',
+      'PostgreSQL',
       'Docker',
-      'Github Actions',
+      'GitLab CI',
+    ],
+  },
+  {
+    name: 'Ministry of Solidarity',
+    url: 'https://solidarites.gouv.fr',
+    role: 'Lead Tech',
+    period: '2024 - 2026',
+    description: 'Developed a new application and maintained an existing one.',
+    tasks: [
+      'Led the architecture and development of a nationwide healthcare reporting platform used by multiple Regional Health Agencies (ARS), each with distinct workflows and operational constraints.',
+      'Designed a fully type-safe full-stack architecture using TypeScript, OpenAPI generation, RPC clients, and modern frontend tooling to improve maintainability and developer velocity.',
+      'Contributed to a French public design system using Vue.js and React and accessibility compliant (RGAA).',
+    ],
+    technologies: [
+      'TypeScript',
+      'React',
+      'Vue.js',
+      'Hono',
+      'NestJS',
+      'PostgreSQL',
+      'MinIO',
+      'Vitest',
+      'Docker',
+      'GitHub Actions',
+      'Storybook',
     ],
   },
   {
@@ -47,22 +65,20 @@ export const experiences: Experience[] = [
     description:
       'Built and led the frontend development team for the EDR application from scratch.',
     tasks: [
-      'Initiated and implemented the frontend of an EDR application from scratch.',
-      'Introduced testing frameworks, and drove migrations from Vue 2 to Vue 3 and from JavaScript to TypeScript.',
-      'Built and led a team of up to 10 people, recruited the members and laid the foundations of a UX/UI team.',
+      'Led the frontend architecture and development of a next-generation EDR platform from its early stages to production adoption.',
+      'Led the adoption of TypeScript, frontend engineering standards, and testing practices across the organization, while driving major framework migrations (Vue 2 to Vue 3) to improve scalability, reliability, and maintainability.',
+      'Built and mentored a frontend team of up to 10 engineers while helping establish product and UX workflows.',
+      'Developed backend services for an internal deployment orchestration tool, including rollout tracking and jobs.',
     ],
     technologies: [
-      'Vite',
-      'Vue',
       'TypeScript',
-      'Pinia',
-      'I18n',
-      'D3.js',
-      'linkurious',
-      'Sass',
+      'Vue.js',
+      'NestJS',
+      'Redis',
+      'BullMQ',
       'Vitest',
       'Playwright',
-      'Testing Library',
+      'D3.js',
     ],
   },
   {
@@ -72,11 +88,11 @@ export const experiences: Experience[] = [
     period: '2019 - 2020',
     description: 'Delivered single-page applications for the client portal and onboarding.',
     tasks: [
-      'Developed a single-page application for the client portal.',
-      'Implemented a single-page application for onboarding new clients.',
-      'Integrated a widget for CRM systems.',
+      'Developed a single-page application powering the client portal.',
+      'Built a dedicated onboarding SPA for new clients acquisition.',
+      'Integrated a reusable widget into various CRM systems, enabling seamless client interactions.',
     ],
-    technologies: ['Vue', 'Svelte', 'Nuxt', 'Sass', 'GoogleAdmin', 'Vitest'],
+    technologies: ['Vue.js', 'Nuxt', 'Vitest', 'Svelte'],
   },
   {
     name: 'Worklife',
@@ -86,7 +102,7 @@ export const experiences: Experience[] = [
     period: '2018 - 2019',
     description: 'Developed and maintained the main platform and internal tools.',
     tasks: ['Enhanced the user experience flow for childcare assistants.'],
-    technologies: ['Vue', 'GraphQL', 'Sass', 'Jest', 'Docker'],
+    technologies: ['Vue.js', 'GraphQL'],
   },
   {
     name: 'Numberly',
@@ -97,11 +113,11 @@ export const experiences: Experience[] = [
     description:
       'Developed and maintained client projects for reporting and visualizing advertising campaign statistics.',
     tasks: [
-      'Implemented new features for an application tracking users across multiple sites.',
-      'Maintained and improved a Data Management Platform application.',
-      'Developed a front-end tracking script similar to a Facebook pixel.',
+      'Implemented new features for a multi-site user tracking platform.',
+      'Maintained and improved a Data Management Platform (DMP), focusing on reliability and performance.',
+      'Developed a lightweight front-end tracking script comparable to a Facebook Pixel.',
     ],
-    technologies: ['AngularJS', 'Flask', 'ChartJS', 'Less', 'Jasmine', 'Karma', 'Gulp'],
+    technologies: ['AngularJS', 'Flask', 'Jasmine', 'Karma', 'Gulp'],
   },
   {
     name: 'Veolia water',

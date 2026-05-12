@@ -31,7 +31,7 @@ const props = defineProps<Experience>();
               y1="12"
               x2="19"
               y2="12"
-              class="translate-x-[10px] scale-x-0 transition-transform group-hover:translate-x-0 group-hover:scale-x-100"
+              class="translate-x-2.5 scale-x-0 transition-transform group-hover:translate-x-0 group-hover:scale-x-100"
             />
             <polyline
               points="12 5 19 12 12 19"

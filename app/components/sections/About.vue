@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 import { motion } from 'motion-v';
 import oneouts from '@/assets/img/oneouts.png';
-import Mariane from '~/assets/img/mariane.svg';
 import { ref } from 'vue';
 
 const hi = [
@@ -66,26 +65,23 @@ onUnmounted(() => {
       </h1>
     </div>
     <p class="mb-8 text-base leading-relaxed text-gray-700 max-w-2xl">
-      I’m a <span class="font-semibold">French Tech Lead</span> at the
+      I’m a <span class="font-semibold">Senior Full-Stack Engineer</span> at
       <a
-        href="https://solidarites.gouv.fr/"
+        href="https://www.cryptonext-security.com/"
         target="_blank"
         rel="noopener noreferrer"
         class="font-medium text-blue-700 hover:underline"
       >
-        Ministry of Solidarity
+        Cryptonext Security
       </a>
-      <Mariane class="inline-block h-4 w-4 ml-1 align-text-bottom" />
       . I’m <span class="font-semibold">passionate</span> about modern web
       <span class="inline-flex items-center gap-2 mx-1">
         <Icon name="logos:vue" class="h-6 w-6" />
         <Icon name="logos:react" class="h-6 w-6" />
         <Icon name="logos:hono" class="h-6 w-6" />
       </span>
-      technologies, and naturally <span class="font-semibold">curious</span>. I focus on the web
-      platform, especially <Icon name="logos:javascript" class="h-6 w-6 mx-1" /> and
-      <Icon name="logos:typescript-icon" class="h-6 w-6 ml-1" /> in the
-      <span class="font-semibold">open-source ecosystem</span>.
+      technologies, distributed systems, and developer tooling. I focus on building
+      scalable TypeScript applications, type-safe APIs, and modern frontend platforms.
     </p>
   </section>
 </template>

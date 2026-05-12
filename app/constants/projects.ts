@@ -1,9 +1,11 @@
+import type { Logos } from "@/constants/logo"
+
 export type Project = {
   name: string;
   description: string;
   features: string[];
   url: string;
-  technologies: string[];
+  technologies: Logos[];
   isArchived?: boolean;
 };
 
@@ -18,38 +20,80 @@ export const projects: Project[] = [
       'Tested with Vitest and Testing Library',
     ],
     url: 'https://github.com/iNeoO/meeting-selector',
-    technologies: ['TypeScript', 'React', 'Vue', 'VitePress', 'Vitest', 'Testing Library'],
+    technologies: ['TypeScript', 'React', 'Vue.js', 'VitePress', 'Vitest', 'Testing Library'],
   },
   {
-    name: 'manga-reader-back',
-    description: 'A backend service for a manga reader application.',
-    url: 'https://github.com/iNeoO/manga-reader-back',
+    name: 'urlshortener',
+    description: 'A collaborative URL shortener platform for teams.',
+    url: 'https://github.com/iNeoO/urlshortener',
     features: [
-      'REST API, with authentication using JWT',
-      'Integration with a PostgreSQL database using Prisma',
-      'Tracking of user reading history',
-      'Protected pages, with authorization',
+      'Authentication, team workspaces, role-based access, and invitation flows',
+      'Dedicated redirect service and event-driven architecture using RabbitMQ workers for email delivery and analytics aggregation',
+      'Full-stack monorepo with containerized infrastructure and observability dashboards',
+      'API and redirector documented with OpenAPI',
     ],
-    technologies: ['Node.js', 'TypeScript', 'NestJS', 'Prisma', 'Postgres'],
+    technologies: [
+      'TypeScript',
+      'React',
+      'Hono',
+      'PostgreSQL',
+      'Redis',
+      'RabbitMQ',
+      'Docker',
+    ],
   },
   {
-    name: 'manga-reader-front',
-    description: 'A frontend application for reading manga online.',
+    name: 'ocr',
+    description: 'A document processing platform built around a queued OCR workflow.',
+    url: 'https://github.com/iNeoO/ocr',
+    features: [
+      'Converts PDFs into structured downloadable outputs',
+      'Upload validation, authenticated user flows, progress tracking, and page-by-page processing',
+      'Full-stack TypeScript monorepo with background workers, object storage, and containerized infrastructure',
+      'Production-oriented service split for API, frontend, workers, database, cache, queue, and storage',
+    ],
+    technologies: [
+      'TypeScript',
+      'React',
+      'TanStack',
+      'tRPC',
+      'PostgreSQL',
+      'Drizzle',
+      'Redis',
+      'RabbitMQ',
+      'MinIO',
+      'Docker',
+      'Tesseract.js',
+      'Ollama',
+    ],
+  },
+  {
+    name: 'manga-reader',
+    description: 'A full-stack manga reader application.',
     url: 'https://github.com/iNeoO/manga-reader-front',
     features: [
       'Browse and read manga from various sources',
-      'User authentication to track reading history',
-      'PWA, Responsive design for mobile and desktop, Dark mode support',
-      'Lazy loading of images for better performance',
+      'REST API with JWT authentication and protected pages',
+      'Tracking of user reading history',
+      'PWA, responsive design for mobile and desktop, and dark mode support',
+      'Media storage backed by MinIO',
     ],
-    technologies: ['TypeScript', 'Vue', 'Vuex'],
+    technologies: [
+      'Node.js',
+      'TypeScript',
+      'NestJS',
+      'Prisma',
+      'PostgreSQL',
+      'MinIO',
+      'Vue.js',
+    ],
   },
   {
     name: 'Personal Website',
     description: 'My personal website showcasing my projects and blog posts.',
     url: 'https://github.com/home',
     features: ['Built with Nuxt 4 and Tailwind CSS', 'Blog powered by @nuxt/content'],
-    technologies: ['TypeScript', 'Vue', 'Nuxt', 'Tailwind'],
+    technologies: ['TypeScript', 'Vue.js', 'Nuxt', 'Tailwind'],
   },
   {
     name: 'ts-spelling-corrector',
@@ -72,7 +116,7 @@ export const projects: Project[] = [
       'Supports single multi-select modes, Grouped options, Searchable options.',
       'Customizable styles and templates.',
     ],
-    technologies: ['JavaScript', 'Vue'],
+    technologies: ['JavaScript', 'Vue.js'],
   },
   {
     name: 'macros-calories',
@@ -85,6 +129,6 @@ export const projects: Project[] = [
       'User authentication and data persistence with MongoDB',
     ],
     url: 'https://github.com/iNeoO/macros-calories',
-    technologies: ['Node.js', 'JavaScript', 'Express', 'Vue', 'MongoDB'],
+    technologies: ['Node.js', 'JavaScript', 'Express', 'Vue.js', 'MongoDB'],
   },
 ];

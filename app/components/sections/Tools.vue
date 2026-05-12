@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import Badge from '@/components/common/Badge.vue';
-import { getLogo } from '@/constants/logo';
+import { getLogo, type Logos } from '@/constants/logo';
 
-const tools = [
+const tools: Logos[] = [
   'HTML5',
   'CSS',
   'JavaScript',
@@ -11,7 +11,7 @@ const tools = [
   'Sass',
   'React',
   'Svelte',
-  'Vue',
+  'Vue.js',
   'Nuxt',
   'TanStack',
   'Tailwind',
@@ -32,7 +32,7 @@ const tools = [
   'Zod',
   'BullMQ',
   'Prisma',
-  'Postgres',
+  'PostgreSQL',
   'MongoDB',
   'Redis',
   'Docker',
