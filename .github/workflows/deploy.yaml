@@ -16,11 +16,20 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
           script: |
-            set -e
-            REPO_DIR="$HOME/github/ineoo/home"
-            test -d "$REPO_DIR/.git" || { echo "Repo not found at $REPO_DIR"; exit 2; }
-            cd "$REPO_DIR"
-            git pull --rebase origin master
-            pnpm install --no-frozen-lockfile
-            pnpm run build
-            "$(npm prefix -g)/bin/pm2" restart ecosystem.config.cjs
+            bash -lc '
+              set -euo pipefail
+              [ -f "$HOME/.profile" ] && . "$HOME/.profile"
+              [ -f "$HOME/.zshrc" ] && . "$HOME/.zshrc"
+
+              REPO_DIR="$HOME/github/ineoo/home"
+              test -d "$REPO_DIR/.git" || { echo "Repo not found at $REPO_DIR"; exit 2; }
+
+              command -v pnpm >/dev/null 2>&1 || { echo "pnpm not found in PATH: $PATH"; exit 127; }
+              command -v npm >/dev/null 2>&1 || { echo "npm not found in PATH: $PATH"; exit 127; }
+
+              cd "$REPO_DIR"
+              git pull --rebase origin master
+              pnpm install --no-frozen-lockfile
+              pnpm run build
+              "$(npm prefix -g)/bin/pm2" restart ecosystem.config.cjs
+            '
