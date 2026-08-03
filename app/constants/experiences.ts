@@ -52,6 +52,7 @@ export const experiences: Experience[] = [
       'Hono',
       'NestJS',
       'PostgreSQL',
+      'RabbitMQ',
       'MinIO',
       'Vitest',
       'Docker',
