@@ -10,11 +10,18 @@ export default defineNuxtConfig({
     'nuxt-og-image',
     'motion-v/nuxt',
     '@nuxt/icon',
+    '@artmizu/nuxt-prometheus',
   ],
   devtools: { enabled: true },
   css: ['~/assets/style/main.css'],
   content: {
     experimental: { nativeSqlite: true },
+  },
+  prometheus: {
+    prometheusPath: '/metric',
+    healthCheck: false,
+    verbose: false,
+    prefix: 'home_',
   },
   compatibilityDate: '2025-11-24',
   vite: {

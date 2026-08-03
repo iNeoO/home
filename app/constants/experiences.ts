@@ -18,10 +18,11 @@ export const experiences: Experience[] = [
     role: 'Senior Full-Stack Engineer',
     period: '2026 - present',
     description:
-      'Modernizing a cybersecurity analytics platform focused on post-quantum cryptography migration and high-volume asset monitoring.',
+      'Modernizing a cybersecurity analytics platform focused on post-quantum cryptography migration, scalable backend architecture, and high-volume asset monitoring.',
     tasks: [
       'Leading the modernization and redesign of a cybersecurity analytics platform focused on post-quantum cryptography migration.',
       'Contributing to the architecture of high-volume asset monitoring and visualization workflows.',
+      'Participated in an LLM Council defining an AI-assisted reporting pipeline for cryptographic asset discovery, combining deterministic risk scoring with LLM-based classification, summarization, and remediation guidance.',
     ],
     technologies: [
       'TypeScript',
@@ -39,8 +40,9 @@ export const experiences: Experience[] = [
     period: '2024 - 2026',
     description: 'Developed a new application and maintained an existing one.',
     tasks: [
-      'Led the architecture and development of a nationwide healthcare reporting platform used by multiple Regional Health Agencies (ARS), each with distinct workflows and operational constraints.',
+      'Led the architecture and development of a nationwide healthcare reporting platform used by all Regional Health Agencies (ARS) in France, each with distinct workflows and operational constraints, reaching around 1,000 users.',
       'Designed a fully type-safe full-stack architecture using TypeScript, OpenAPI generation, RPC clients, and modern frontend tooling to improve maintainability and developer velocity.',
+      'Designed and implemented an OCR-based document processing pipeline for administrative application forms, processing around 100 documents per day and enabling organization-wide use by the Data team.',
       'Contributed to a French public design system using Vue.js and React and accessibility compliant (RGAA).',
     ],
     technologies: [
@@ -66,8 +68,8 @@ export const experiences: Experience[] = [
       'Built and led the frontend development team for the EDR application from scratch.',
     tasks: [
       'Led the frontend architecture and development of a next-generation EDR platform from its early stages to production adoption.',
-      'Led the adoption of TypeScript, frontend engineering standards, and testing practices across the organization, while driving major framework migrations (Vue 2 to Vue 3) to improve scalability, reliability, and maintainability.',
-      'Built and mentored a frontend team of up to 10 engineers while helping establish product and UX workflows.',
+      'Led the adoption of TypeScript, frontend engineering standards, and testing practices across the organization, while driving major framework migrations (Vue 2 to Vue 3, completed in under a month with a two-person team) to improve scalability, reliability, and maintainability.',
+      'Built and mentored a frontend team, growing it from 3 to up to 10 engineers, while helping establish product and UX workflows.',
       'Developed backend services for an internal deployment orchestration tool, including rollout tracking and jobs.',
     ],
     technologies: [
