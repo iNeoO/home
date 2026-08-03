@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     experimental: { nativeSqlite: true },
   },
   prometheus: {
-    prometheusPath: '/metric',
+    prometheusPath: '/metrics',
     healthCheck: false,
     verbose: false,
     prefix: 'home_',
