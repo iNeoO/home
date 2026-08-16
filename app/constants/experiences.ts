@@ -15,7 +15,7 @@ export const experiences: Experience[] = [
   {
     name: 'Cryptonext-security',
     url: 'https://www.cryptonext-security.com/',
-    role: 'Senior Full-Stack Engineer',
+    role: 'Senior Fullstack Software Engineer',
     period: '2026 - present',
     description:
       'Modernizing a cybersecurity analytics platform focused on post-quantum cryptography migration, scalable backend architecture, and high-volume asset monitoring.',
@@ -31,12 +31,13 @@ export const experiences: Experience[] = [
       'PostgreSQL',
       'Docker',
       'GitLab CI',
+      'Anthropic',
     ],
   },
   {
     name: 'Ministry of Solidarity',
     url: 'https://solidarites.gouv.fr',
-    role: 'Lead Tech',
+    role: 'Lead Fullstack Engineer',
     period: '2024 - 2026',
     description: 'Developed a new application and maintained an existing one.',
     tasks: [
@@ -54,6 +55,7 @@ export const experiences: Experience[] = [
       'PostgreSQL',
       'RabbitMQ',
       'MinIO',
+      'Ollama',
       'Vitest',
       'Docker',
       'GitHub Actions',

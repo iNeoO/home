@@ -15,7 +15,7 @@
   "dependencies": {
     "@artmizu/nuxt-prometheus": "^3.0.4",
     "@iconify-json/lucide": "^1.2.74",
-    "@iconify-json/simple-icons": "^1.2.59",
+    "@iconify-json/simple-icons": "^1.2.93",
     "@nuxt/content": "^3.8.2",
     "@nuxt/icon": "2.1.0",
     "@nuxt/image": "^2.0.0",

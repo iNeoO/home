@@ -19,8 +19,10 @@ const links = [
         </a>
 
         <p class="max-w-sm text-sm text-neutral-600">
-          French Tech Lead passionate about JavaScript and TypeScript. Open Source enthusiast.
+          Senior TypeScript Engineer & Fullstack Developer, passionate about type-safe
+          architectures. Open Source enthusiast.
         </p>
+        <p class="text-xs text-neutral-500">Paris</p>
 
         <div class="flex items-center gap-5 text-neutral-600">
           <a
@@ -49,6 +51,13 @@ const links = [
             aria-label="npm"
           >
             <Icon name="mdi:npm" class="h-5 w-5" />
+          </a>
+          <a
+            href="mailto:pique.valere@gmx.fr"
+            class="transition-colors hover:text-primary"
+            aria-label="Email"
+          >
+            <Icon name="mdi:email-outline" class="h-5 w-5" />
           </a>
         </div>
 

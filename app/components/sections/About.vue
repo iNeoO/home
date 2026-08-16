@@ -62,10 +62,14 @@ onUnmounted(() => {
         <p class="text-lg text-gray-600">
           My name is <span class="font-semibold text-primary">Valère</span>
         </p>
+        <p class="text-sm font-medium tracking-wide text-neutral-500">
+          Senior TypeScript Engineer &amp; Fullstack Developer
+        </p>
       </h1>
     </div>
+
     <p class="mb-8 text-base leading-relaxed text-gray-700 max-w-2xl">
-      I’m a <span class="font-semibold">Senior Full-Stack Engineer</span> at
+      I’m a <span class="font-semibold">Senior Fullstack Software Engineer</span> at
       <a
         href="https://www.cryptonext-security.com/"
         target="_blank"
@@ -74,14 +78,19 @@ onUnmounted(() => {
       >
         Cryptonext Security
       </a>
-      . I’m <span class="font-semibold">passionate</span> about modern web
+      , where I work on post-quantum cryptography migration and high-volume asset
+      monitoring. Over the last 10+ years I’ve taken platforms from architecture to
+      production across EDR cybersecurity, nationwide healthcare reporting, and
+      post-quantum cryptography. I’m <span class="font-semibold">passionate</span> about
+      modern web
       <span class="inline-flex items-center gap-2 mx-1">
         <Icon name="logos:vue" class="h-6 w-6" />
         <Icon name="logos:react" class="h-6 w-6" />
         <Icon name="logos:hono" class="h-6 w-6" />
       </span>
       technologies, distributed systems, and developer tooling. I focus on building
-      scalable TypeScript applications, type-safe APIs, and modern frontend platforms.
+      scalable TypeScript applications, type-safe APIs, and AI-assisted engineering
+      workflows.
     </p>
   </section>
 </template>

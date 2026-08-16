@@ -53,6 +53,20 @@ const size = props.isShort ? 'xs' : 'sm';
       </span>
     </div>
 
+    <ul v-if="props.links?.length" class="-mt-4 flex flex-wrap gap-x-4 gap-y-1">
+      <li v-for="link in props.links" :key="link.url">
+        <a
+          :href="link.url"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-1 text-xs text-neutral-500 underline-offset-4 hover:text-primary hover:underline"
+        >
+          <Icon :name="link.icon" class="h-3.5 w-3.5" />
+          <span>{{ link.label }}</span>
+        </a>
+      </li>
+    </ul>
+
     <p v-if="props.isShort" class="mb-4 line-clamp-3 text-sm text-neutral-600">
       {{ props.description }}
     </p>

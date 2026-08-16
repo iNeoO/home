@@ -9,11 +9,16 @@ export const mappingLogo = {
 
   // UI / Front
   React: 'logos:react',
+  'Next.js': 'logos:nextjs-icon',
   Svelte: 'logos:svelte-icon',
   'Vue.js': 'logos:vue',
   AngularJS: 'devicon:angularjs',
   Nuxt: 'logos:nuxt-icon',
-  TanStack: 'noto:palm-tree',
+  TanStack: 'simple-icons:tanstack',
+  'TanStack Start': 'simple-icons:tanstack',
+  'TanStack Router': 'simple-icons:tanstack',
+  'TanStack Query': 'simple-icons:tanstack',
+  'Radix UI': 'simple-icons:radixui',
   Tailwind: 'logos:tailwindcss-icon',
   Vite: 'logos:vitejs',
   Vuex: 'logos:vue',
@@ -51,6 +56,7 @@ export const mappingLogo = {
   Flask: 'logos:flask',
   PHP: 'logos:php',
   tRPC: 'devicon:trpc',
+  'Better Auth': 'simple-icons:betterauth',
 
   // DB / ORM / Infra
   Prisma: 'skill-icons:prisma',
@@ -69,8 +75,17 @@ export const mappingLogo = {
   GoogleAdmin: 'arcticons:google-admin',
   DynamoDB: 'devicon:dynamodb',
   MinIO: 'simple-icons:minio',
+  S3: 'logos:aws-s3',
+  Garage: 'selfhst:garage',
   Jenkins: 'logos:jenkins',
   Ollama: 'devicon:ollama',
+  OpenAI: 'logos:openai-icon',
+  Anthropic: 'logos:anthropic-icon',
+
+  // Observability
+  Prometheus: 'logos:prometheus',
+  Grafana: 'logos:grafana',
+  Loki: 'selfhst:loki',
 };
 
 export type Logos = keyof typeof mappingLogo

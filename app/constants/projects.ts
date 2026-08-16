@@ -1,10 +1,17 @@
 import type { Logos } from "@/constants/logo"
 
+export type ProjectLink = {
+  label: string;
+  url: string;
+  icon: string;
+};
+
 export type Project = {
   name: string;
   description: string;
   features: string[];
   url: string;
+  links?: ProjectLink[];
   technologies: Logos[];
   isArchived?: boolean;
 };
@@ -15,17 +22,42 @@ export const projects: Project[] = [
     description: 'A component to schedule meetings more efficiently.',
     features: [
       'A component to help users find the best time for meetings by selecting their availability.',
+      'Published on npm and reaching 200-300 weekly downloads',
       'Supports integration with React and Vue',
       'Documentation made with VitePress',
       'Tested with Vitest and Testing Library',
     ],
     url: 'https://github.com/iNeoO/meeting-selector',
+    links: [
+      {
+        label: 'meeting-selector.tuturu.io',
+        url: 'https://meeting-selector.tuturu.io',
+        icon: 'lucide:external-link',
+      },
+      {
+        label: 'vue-meeting-selector',
+        url: 'https://www.npmjs.com/package/vue-meeting-selector',
+        icon: 'mdi:npm',
+      },
+      {
+        label: 'react-meeting-selector',
+        url: 'https://www.npmjs.com/package/react-meeting-selector',
+        icon: 'mdi:npm',
+      },
+    ],
     technologies: ['TypeScript', 'React', 'Vue.js', 'VitePress', 'Vitest', 'Testing Library'],
   },
   {
     name: 'urlshortener',
     description: 'A collaborative URL shortener platform for teams.',
     url: 'https://github.com/iNeoO/urlshortener',
+    links: [
+      {
+        label: 'urlshortener.tuturu.io',
+        url: 'https://urlshortener.tuturu.io',
+        icon: 'lucide:external-link',
+      },
+    ],
     features: [
       'Authentication, team workspaces, role-based access, and invitation flows',
       'Dedicated redirect service and event-driven architecture using RabbitMQ workers for email delivery and analytics aggregation',
@@ -40,31 +72,42 @@ export const projects: Project[] = [
       'Redis',
       'RabbitMQ',
       'Docker',
+      'Grafana',
     ],
   },
   {
     name: 'ocr',
     description: 'A document processing platform built around a queued OCR workflow.',
     url: 'https://github.com/iNeoO/ocr',
+    links: [
+      {
+        label: 'ocr.tuturu.io',
+        url: 'https://ocr.tuturu.io',
+        icon: 'lucide:external-link',
+      },
+    ],
     features: [
       'Converts PDFs into structured downloadable outputs',
       'Upload validation, authenticated user flows, progress tracking, and page-by-page processing',
+      'Single TanStack Start server owning the whole server layer: server functions and route handlers call the business services in memory, with no separate API process',
+      'End-to-end type safety from the database to the UI',
+      'Live process tracking streamed to the browser over SSE',
+      'Page-by-page markdown refinement with an OpenAI vision model through TanStack AI',
       'Full-stack TypeScript monorepo with background workers, object storage, and containerized infrastructure',
-      'Production-oriented service split for API, frontend, workers, database, cache, queue, and storage',
     ],
     technologies: [
       'TypeScript',
       'React',
-      'TanStack',
-      'tRPC',
+      'TanStack Start',
       'PostgreSQL',
       'Drizzle',
       'Redis',
       'RabbitMQ',
-      'MinIO',
+      'S3',
+      'Garage',
       'Docker',
       'Tesseract.js',
-      'Ollama',
+      'OpenAI',
     ],
   },
   {
@@ -91,7 +134,14 @@ export const projects: Project[] = [
   {
     name: 'Personal Website',
     description: 'My personal website showcasing my projects and blog posts.',
-    url: 'https://github.com/home',
+    url: 'https://github.com/iNeoO/home',
+    links: [
+      {
+        label: 'tuturu.io',
+        url: 'https://tuturu.io',
+        icon: 'lucide:external-link',
+      },
+    ],
     features: ['Built with Nuxt 4 and Tailwind CSS', 'Blog powered by @nuxt/content'],
     technologies: ['TypeScript', 'Vue.js', 'Nuxt', 'Tailwind'],
   },
