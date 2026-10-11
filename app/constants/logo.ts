@@ -57,6 +57,7 @@ export const mappingLogo = {
   PHP: 'logos:php',
   tRPC: 'devicon:trpc',
   'Better Auth': 'simple-icons:betterauth',
+  Telegram: 'logos:telegram',
 
   // DB / ORM / Infra
   Prisma: 'skill-icons:prisma',
@@ -72,6 +73,7 @@ export const mappingLogo = {
   AWS: 'logos:aws',
   'GitHub Actions': 'logos:github-actions',
   'GitLab CI': 'devicon:gitlab',
+  SonarQube: 'simple-icons:sonarqube',
   GoogleAdmin: 'arcticons:google-admin',
   DynamoDB: 'devicon:dynamodb',
   MinIO: 'simple-icons:minio',

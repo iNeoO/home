@@ -13,20 +13,21 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
-    name: 'Cryptonext-security',
+    name: 'CryptoNext Security',
     url: 'https://www.cryptonext-security.com/',
     role: 'Senior Fullstack Software Engineer',
     period: '2026 - present',
     description:
       'Modernizing a cybersecurity analytics platform focused on post-quantum cryptography migration, scalable backend architecture, and high-volume asset monitoring.',
     tasks: [
-      'Leading the modernization and redesign of a cybersecurity analytics platform focused on post-quantum cryptography migration.',
-      'Contributing to the architecture of high-volume asset monitoring and visualization workflows.',
-      'Participated in an LLM Council defining an AI-assisted reporting pipeline for cryptographic asset discovery, combining deterministic risk scoring with LLM-based classification, summarization, and remediation guidance.',
+      'Leading the modernization of a cybersecurity analytics platform focused on post-quantum cryptography migration, scalable backend architecture, and high-volume asset monitoring pipelines.',
+      'Designed an AI-assisted reporting pipeline for cryptographic asset discovery, combining deterministic risk scoring with LLM-based classification, summarization, and remediation guidance.',
     ],
     technologies: [
       'TypeScript',
+      'Node.js',
       'Hono',
+      'Next.js',
       'React',
       'PostgreSQL',
       'Docker',
@@ -35,11 +36,12 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    name: 'Ministry of Solidarity',
+    name: 'Ministry of Solidarity (DNUM)',
     url: 'https://solidarites.gouv.fr',
     role: 'Lead Fullstack Engineer',
     period: '2024 - 2026',
-    description: 'Developed a new application and maintained an existing one.',
+    description:
+      'Led a nationwide healthcare reporting platform for all French Regional Health Agencies (ARS).',
     tasks: [
       'Led the architecture and development of a nationwide healthcare reporting platform used by all Regional Health Agencies (ARS) in France, each with distinct workflows and operational constraints, reaching around 1,000 users.',
       'Designed a fully type-safe full-stack architecture using TypeScript, OpenAPI generation, RPC clients, and modern frontend tooling to improve maintainability and developer velocity.',
@@ -48,6 +50,7 @@ export const experiences: Experience[] = [
     ],
     technologies: [
       'TypeScript',
+      'Node.js',
       'React',
       'Vue.js',
       'Hono',
@@ -65,7 +68,7 @@ export const experiences: Experience[] = [
   {
     name: 'Harfanglab',
     url: 'https://harfanglab.io',
-    role: 'Lead Frontend Developer',
+    role: 'Lead Frontend Engineer',
     period: '2020 - 2024',
     description:
       'Built and led the frontend development team for the EDR application from scratch.',
@@ -77,6 +80,7 @@ export const experiences: Experience[] = [
     ],
     technologies: [
       'TypeScript',
+      'Node.js',
       'Vue.js',
       'NestJS',
       'Redis',
@@ -125,7 +129,7 @@ export const experiences: Experience[] = [
     technologies: ['AngularJS', 'Flask', 'Jasmine', 'Karma', 'Gulp'],
   },
   {
-    name: 'Veolia water',
+    name: 'Veolia Water',
     exName: 'by: Sopra Steria',
     url: 'https://veolia.com',
     role: 'Software Engineer',

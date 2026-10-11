@@ -63,7 +63,7 @@ onUnmounted(() => {
           My name is <span class="font-semibold text-primary">Valère</span>
         </p>
         <p class="text-sm font-medium tracking-wide text-neutral-500">
-          Senior TypeScript Engineer &amp; Fullstack Developer
+          Senior Fullstack TypeScript Engineer
         </p>
       </h1>
     </div>
@@ -76,7 +76,7 @@ onUnmounted(() => {
         rel="noopener noreferrer"
         class="font-medium text-blue-700 hover:underline"
       >
-        Cryptonext Security
+        CryptoNext Security
       </a>
       , where I work on post-quantum cryptography migration and high-volume asset
       monitoring. Over the last 10+ years I’ve taken platforms from architecture to
@@ -90,7 +90,15 @@ onUnmounted(() => {
       </span>
       technologies, distributed systems, and developer tooling. I focus on building
       scalable TypeScript applications, type-safe APIs, and AI-assisted engineering
-      workflows.
+      workflows, including
+      <a
+        href="https://dailybriefs.fr"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="font-medium text-blue-700 hover:underline"
+      >
+        DailyBriefs</a
+      >, an AI-powered news briefing side project live in production.
     </p>
   </section>
 </template>

@@ -19,7 +19,7 @@ const links = [
         </a>
 
         <p class="max-w-sm text-sm text-neutral-600">
-          Senior TypeScript Engineer & Fullstack Developer, passionate about type-safe
+          Senior Fullstack TypeScript Engineer, passionate about type-safe
           architectures. Open Source enthusiast.
         </p>
         <p class="text-xs text-neutral-500">Paris</p>
